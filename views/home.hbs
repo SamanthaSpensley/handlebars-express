@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>{{title}}</title>
+  </head>
+  <body>
+    {{#if cohortName}}
+      <h1>Hi {{cohortName}}</h1>
+    {{else}}
+      <h1>I don't know what cohort you are</h1>
+    {{/if}}
+
+    <h1>My Favorite Foods:</h1>
+    <ol>
+      {{#each foods}}
+        <li>{{this}}</li>
+      {{/each}}
+    </ol>
+
+  </body>
+</html>
